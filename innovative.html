@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Scrambling Simulation</h1>
+        <div class="input-section">
+            <label>Enter Bit Sequence:</label>
+            <input type="text" id="bitInput" placeholder="e.g. 1000001000001">
+            <button onclick="simulate('b8zs')">B8ZS</button>
+            <button onclick="simulate('hdb3')">HDB3</button>
+        </div>
+        <div class="graph-container">
+            <svg id="chart" width="900" height="400"></svg>
+        </div>
+        <div class="description" id="descriptionBox">
+            <h3>Scrambling Scheme Details</h3>
+            <p id="descriptionText">Click on B8ZS or HDB3 to view scrambling logic here.</p>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
